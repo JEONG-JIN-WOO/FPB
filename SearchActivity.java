@@ -109,7 +109,7 @@ public class SearchActivity extends AppCompatActivity{
             public void onClick(View v) {
 
                name = search.getText().toString();
-
+            //Json 방식이 아닌 String 비교 형식으로 검색 구현
                 String url = "http://128.199.238.222/search.php";
 
                 Request jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null,
